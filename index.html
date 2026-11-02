@@ -20,7 +20,7 @@
       <div class="subjects">
         <button class="subject communication" data-subject="의사소통" aria-haspopup="dialog">
           <span class="card-top"><span class="icon" aria-hidden="true">↔</span><span class="number">01</span></span>
-          <span class="card-title">의사소통</span><span class="card-bottom"><span>등록된 내용 0개</span><span class="arrow" aria-hidden="true">↗</span></span>
+          <span class="card-title">의사소통</span><span class="card-bottom"><span>등록된 내용 1개</span><span class="arrow" aria-hidden="true">↗</span></span>
         </button>
         <button class="subject organization" data-subject="조직이해" aria-haspopup="dialog">
           <span class="card-top"><span class="icon" aria-hidden="true">▦</span><span class="number">02</span></span>
@@ -35,9 +35,22 @@
     <button class="close" aria-label="닫기">×</button>
     <span class="eyebrow">MY STUDY NOTE</span>
     <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+    <article class="study-content" hidden>
+      <h3>공문서</h3>
+      <ol>
+        <li><strong>누가, 언제, 어디서, 무엇을, 어떻게</strong>가 드러나도록 써야 한다.</li>
+        <li>날짜는 <strong>연도와 월일</strong>을 반드시 언급해야 한다.</li>
+        <li>공문서는 대외 문서이고 장기간 보관하는 문서이기에 <strong>정확하게 기술한다.</strong></li>
+        <li>내용이 복잡할 경우 <strong>‘-아래-’, ‘-다음-’</strong>과 같은 항목을 만들어 구분한다.</li>
+        <li>마지막에는 반드시 <strong>‘끝’</strong>자로 마무리해야 한다.</li>
+      </ol>
+    </article>
+    <div class="empty-state">
     <div class="empty-icon" aria-hidden="true">＋</div>
     <h3>아직 등록된 내용이 없어요</h3>
-    <p id="dialog-description">추가할 내용을 알려주시면 이곳에 채워둘게요.</p>
+    <p>추가할 내용을 알려주시면 이곳에 채워둘게요.</p>
+    </div>
     <button class="back">학습 영역으로 돌아가기</button>
   </dialog>
   <script src="app.js"></script>
