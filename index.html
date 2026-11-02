@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f8">
+  <title>NCS · 모듈형 암기</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./" aria-label="NCS 홈">ncs<span class="brand-dot">.</span></a><span class="top-label">나의 암기 노트</span></header>
+  <main>
+    <section class="intro">
+      <span class="eyebrow">NCS STUDY NOTE</span>
+      <h1>하나씩 익히고,<br>확실하게 기억하기.</h1>
+      <p>모듈형 암기, 필요한 내용부터 차근차근.</p>
+    </section>
+    <section aria-labelledby="subjects-title">
+      <div class="section-heading"><h2 id="subjects-title">학습 영역 <span>02</span></h2><span class="section-caption">공부할 영역을 선택하세요</span></div>
+      <div class="subjects">
+        <button class="subject communication" data-subject="의사소통" aria-haspopup="dialog">
+          <span class="card-top"><span class="icon" aria-hidden="true">↔</span><span class="number">01</span></span>
+          <span class="card-title">의사소통</span><span class="card-bottom"><span>등록된 내용 0개</span><span class="arrow" aria-hidden="true">↗</span></span>
+        </button>
+        <button class="subject organization" data-subject="조직이해" aria-haspopup="dialog">
+          <span class="card-top"><span class="icon" aria-hidden="true">▦</span><span class="number">02</span></span>
+          <span class="card-title">조직이해</span><span class="card-bottom"><span>등록된 내용 0개</span><span class="arrow" aria-hidden="true">↗</span></span>
+        </button>
+      </div>
+      <p class="note"><span aria-hidden="true">✳</span> 학습 내용은 하나씩 채워갈 예정이에요.</p>
+    </section>
+    <footer><span>NCS · 모듈형 암기</span><span>작은 반복이 만드는 확실한 기억</span></footer>
+  </main>
+  <dialog aria-labelledby="dialog-title" aria-describedby="dialog-description">
+    <button class="close" aria-label="닫기">×</button>
+    <span class="eyebrow">MY STUDY NOTE</span>
+    <h2 id="dialog-title"></h2>
+    <div class="empty-icon" aria-hidden="true">＋</div>
+    <h3>아직 등록된 내용이 없어요</h3>
+    <p id="dialog-description">추가할 내용을 알려주시면 이곳에 채워둘게요.</p>
+    <button class="back">학습 영역으로 돌아가기</button>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
